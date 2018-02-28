@@ -1,0 +1,6 @@
+<h1>Peeps List</h1>
+<% @peeps.each do |peep| %>
+<h2><%= peep.name %></h2>
+<%= link_to 'Peep List', peep_path(peep) %>
+<p><%= link_to 'New Peeps', new_peep_path %></p>
+<% end %>
